@@ -6,3 +6,14 @@
 .footer .row .col {
     text-align: center;
 }
+
+.consult-page div {
+    text-align: center;
+    margin: auto;
+}
+
+.bottom-button {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 72px;
+}

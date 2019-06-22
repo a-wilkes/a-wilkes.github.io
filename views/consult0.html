@@ -1,0 +1,41 @@
+<div class="container mb-5">
+
+  <h4 class="container">Consultation</h4>
+
+  <div class="container mb-5">
+  <div class="card">
+    <div class="card-body">
+      <h6 class="card-title">Upcoming Appointments</h6>
+
+      <div class="tab-content">
+
+
+          <!-- LIST OF ARTICLES -->
+          <ul class="list-unstyled">
+            <li class="media">
+              <img src="https://cdn2.iconfinder.com/data/icons/medical-icons-110/512/medical_icon_7-64.png" class="mr-3" alt="...">
+              <div class="media-body">
+                <h6 class="mt-0 mb-1">Therapist 1</h6>
+                Date: 22/07/19 | Time: 12:00
+                <br>
+                <a href="#" class="card-link">Re-schedule</a>
+                <a href="#" class="card-link">Cancel</a>
+              </div>
+            </li>
+          </ul>
+
+          </div>
+          </div>
+          </div>
+          </div>
+
+      <div class="consult-page bottom-button container pl-5">
+        <button type="button" class="btn btn-primary px-5 schedule">Schedule Appointment</button>
+      </div>
+      <script type="text/javascript">
+        $(".schedule").click(function(){
+           $('.root').load("views/consult.html");
+        });
+      </script>
+
+</div>

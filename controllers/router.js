@@ -11,7 +11,7 @@ $(".community").click(function(){
 });
 
 $(".consult").click(function(){
-   $('.root').load("views/consult.html");
+   $('.root').load("views/consult0.html");
 });
 
 $(".monitor").click(function(){
