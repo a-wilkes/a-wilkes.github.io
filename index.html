@@ -13,13 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.css">
 
     <link rel="stylesheet" href="./index.css">
-
+    
     <link rel="stylesheet" href="./sidenav.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Toggle switch stylesheet -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
     <title>BabyBreathe</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container-fluid">
         <nav class="row bg-light shadow-sm p-3 mb-2">
             <div class="fas fa-bars d-inline-block align-top col-1" onclick="openNav()"></div>
             <div class="col-10"><b>BabyBreathe<sup>TM</sup></b></div>
@@ -27,12 +32,13 @@
         </nav>
     </header>
 
+
     <div class="root">
     </div>
 
 
 
-    <div class="footer container bg-light p-3 shadow-md">
+    <div class="footer container-fluid bg-light p-3 shadow-md">
         <div class="row">
             <div class="col community">
               <i class="fas fa-users"></i>
@@ -51,21 +57,23 @@
             </div>
         </div>
     </div>
-      
+
     <div id="my-nav-overlay" class="sidenav" style="width: 0px; opacity: 0.2;" onclick="closeNav()">
+      </div>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="profile" onclick="closeNav()">Profile</a>
+      <a href="#" class="settings" onclick="closeNav()">Settings</a>
+      <a href="#" class="home" onclick="closeNav()">Home</a>
+      <a href="#" class="consult" onclick="closeNav()">Consultation</a>
+      <a href="#" class="community" onclick="closeNav()">Community</a>
+      <a href="#" class="games" onclick="closeNav()">Recreation</a>
+      <a href="#" class="monitor" onclick="closeNav()">Monitor</a>
     </div>
-      
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" class="profile"  onclick="closeNav()">Profile</a>
-            <a href="#" class="settings"  onclick="closeNav()">Settings</a>
-            <a href="#" class="home"  onclick="closeNav()">Home</a>
-            <a href="#" class="consult"  onclick="closeNav()">Consultation</a>
-            <a href="#" class="community"  onclick="closeNav()">Community</a>
-            <a href="#" class="games"  onclick="closeNav()">Recreation</a>
-            <a href="#" class="monitor"  onclick="closeNav()">Monitor</a>
-        </div>
-      
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,6 +82,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
         <script src="./controllers/router.js"></script>
         <script src="./controllers/nav.js"></script>
+    <!-- Toggle Switch source -->
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
       
   </body>
 </html>
