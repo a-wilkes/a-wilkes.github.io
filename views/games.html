@@ -13,7 +13,7 @@
                       </div>
                       <div class="col">
                         <h5 class="card-title">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Invite</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block friends">Invite</button>
                         </h5>
                       </div>
                     </div>
@@ -31,12 +31,14 @@
               <div class="card-body" id="card">
                 <div class="row">
                   <div class="col">
+                    <h5>
                       <button type="button" class="btn btn-success btn-lg btn-block">Play</button>
+                    </h5>
                   </div>
                   <div class="col">
                     <h5 class="card-title">
-                      <button type="button" class="btn btn-primary btn-lg btn-block">Invite</button>
-                    </h2>
+                      <button type="button" class="btn btn-primary btn-lg btn-block friends">Invite</button>
+                    </h5>
                   </div>
                 </div>
               </div>
@@ -53,11 +55,13 @@
               <div class="card-body" id="card">
                   <div class="row">
                       <div class="col">
+                        <h5>
                           <button type="button" class="btn btn-success btn-lg btn-block">Play</button>
+                        </h5>
                       </div>
                       <div class="col">
                         <h5 class="card-title">
-                          <button type="button" class="btn btn-primary btn-lg btn-block">Invite</button>
+                          <button type="button" class="btn btn-primary btn-lg btn-block friends">Invite</button>
                         </h5>
                       </div>
                     </div>
@@ -72,7 +76,9 @@
         </div>
       </div>
 
-<style>
 
-
-</style>
+<script type="text/javascript">
+    $(".friends").click(function(){
+       $('.root').load("views/friends.html");
+    });
+</script>
