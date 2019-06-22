@@ -25,7 +25,7 @@
   </div>
   </div>
 
-  <div class="container mb-3">
+  <div class="container mb-3 discover">
   <div class="card">
     <div class="card-body">
       <h6 class="card-title">Discover</h6>
@@ -95,7 +95,7 @@
 
         </div>
       </div>
-      <a href="#" class="card-link">Show More</a>
+      <a href="#" class="card-link showmore-news">Show More</a>
     </div>
   </div>
   </div>
@@ -172,7 +172,18 @@
 
         </div>
       </div>
-      <a href="#" class="card-link">Show More</a>
+      <a href="#" class="card-link showmore-com">Show More</a>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+    $(".showmore-news").click(function(){
+       $('.root').load("views/showmore.html");
+    });
+  </script>
+<script type="text/javascript">
+    $(".discover li").click(function(){
+       $('.root').load("views/article.html");
+    });
+</script>
