@@ -6,12 +6,12 @@
       <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile pills-encourage" aria-selected="true">Profile</a>
+            aria-controls="pills-profile" aria-selected="true" onclick="showMessage('#pills-tabContentLower')">Profile</a>
         </li>
         
         <li class="nav-item">
           <a class="nav-link" id="pills-favourites-tab" data-toggle="pill" href="#pills-favourites" role="tab"
-            aria-controls="pills-favourites" aria-selected="false">Favourites</a>
+            aria-controls="pills-favourites" aria-selected="false" onclick="hideMessage('#pills-tabContentLower')">Favourites</a>
         </li>
       </ul>
 
@@ -81,8 +81,8 @@
       </div>
     </div>
   </div>
-  <div class="card tab-content" id="pills-tabContentLower">
-    <div class="card-body tab-pane fade show active" id="pills-encourage" role="tabpanel" aria-labelledby="pills-encourage-tab">
+  <div class="card" id="pills-tabContentLower">
+    <div class="card-body">
       <div>
         <p>You've been smoke free for 50 days!</p>
         <p>Keep it up!</p>
@@ -90,3 +90,14 @@
     </div>
   </div>
 </div>
+
+<!-- Controls hiding and showing multiple tabs when clicking the pills -->
+<script>
+  function hideMessage(elem) {
+    $(elem).hide();
+  }
+
+  function showMessage(elem) {
+      $(elem).show();
+    }
+</script>
