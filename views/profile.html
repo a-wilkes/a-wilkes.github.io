@@ -1,17 +1,18 @@
-<div class="container-fluid mb-3 mt-5">
+<div class="container-fluid mb-3 mt-4">
   <div class="card">
+    <div class="card-header text-center">
+      <h6 id="page-header">Tell us your story</h6>
+    </div>
     <div class="card-body">
-      <h6 class="card-title text-center">Profile</h6>
-
       <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile" aria-selected="true" onclick="showMessage('#pills-tabContentLower')">Profile</a>
+            aria-controls="pills-profile" aria-selected="true" onclick="showMessage('#pills-tabContentLower');changeHeader(false);">Profile</a>
         </li>
         
         <li class="nav-item">
           <a class="nav-link" id="pills-favourites-tab" data-toggle="pill" href="#pills-favourites" role="tab"
-            aria-controls="pills-favourites" aria-selected="false" onclick="hideMessage('#pills-tabContentLower')">Favourites</a>
+            aria-controls="pills-favourites" aria-selected="false" onclick="hideMessage('#pills-tabContentLower');changeHeader(true);">Favourites</a>
         </li>
       </ul>
 
@@ -101,6 +102,17 @@
 
 <!-- Controls hiding and showing multiple tabs when clicking the pills -->
 <script>
+  function changeHeader(profile) {
+    if (profile) {
+      document.getElementById('page-header').innerHTML = "Check our posts you've liked here";
+    }
+    else {
+      document.getElementById('page-header').innerHTML = "Tell us your story";
+    }
+
+    profile = !profile;
+  }
+
   function hideMessage(elem) {
     $(elem).hide();
   }
