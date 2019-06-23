@@ -1,6 +1,5 @@
+
 <div class="container-fluid">
-
-
     <div class="input-group">
         <input type="text" class="form-control" , placeholder="Find friend">
         <span class="input-group-btn">
@@ -9,78 +8,68 @@
     </div>
 
     <div class="row">
-
-
-
-
         <div class="col-md-8">
 
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link">Tolu Bempong</a></h5>
+                        <h5><a href="#" class="profile-link">Friend 1</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link">Anthonius Wilkius</a></h5>
+                        <h5><a href="#" class="profile-link">Friend 2</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link"> Rayyu He</a></h5>
+                        <h5><a href="#" class="profile-link">Friend 3</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link">Anjaria Matata</a></h5>
+                        <h5><a href="#" class="profile-link">Friend 4</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link">Jim The Tool</a></h5>
+                        <h5><a href="#" class="profile-link">Friend 5</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
             <div class="user">
                 <div class="row">
                     <div class="col profile">
-                        <h5><a href="#" class="profile-link">Huixi Lu</a></h5>
+                        <h5><a href="#" class="profile-link">Friend</a></h5>
                     </div>
                     <div class="col invite">
-                        <button class="btn btn-primary pull-right">Send Invite</button>
+                        <button class="success btn btn-primary pull-right">Send Invite</button>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
 </div>
@@ -119,3 +108,16 @@
         margin-bottom: 25px;
     }
 </style>
+
+<script type="text/javascript">
+
+    $(".success").click(function(){
+        $.bootstrapGrowl('Invite send!',{
+            type: 'success',
+            delay: 1000,
+            offset: {from: 'top', amount: 65},
+            align: "center"
+        });
+    });
+
+</script>

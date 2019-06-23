@@ -7,10 +7,17 @@
 
 header {
     position: fixed;
-    height: 55px;
+    height: 50px;
     top: 0;
-    overflow: hidden;
+    overflow: auto;
     z-index: 1;
+    
+}
+
+.messaging {
+    position: fixed;
+    padding-right: 15px;
+    right: 0;
 }
 
 .content {
@@ -24,6 +31,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
+    padding-top: 15px;
     margin-top: 100px;
     min-height: 60px;
     line-height: 60px;
@@ -43,4 +51,3 @@ header {
     bottom: 0;
     margin-bottom: 72px;
 }
-
