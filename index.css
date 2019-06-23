@@ -4,6 +4,13 @@
     overflow: hidden;
 }
 
+.card {
+    border-radius: 1.25em !important;
+}
+
+.card-header:first-child {
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0 !important;
+}
 
 header {
     position: fixed;
@@ -24,6 +31,14 @@ header {
     padding-top: 70px;
     padding-bottom: 25px;
     overflow: auto;
+}
+
+.carousel-item img {
+    border-radius: 1.25em;
+}
+
+img.card-img-top {
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;
 }
 
 .footer {

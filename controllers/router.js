@@ -41,7 +41,7 @@ $(".games").click(function(){
 $(".messaging").click(function(){
    $('.root').load("views/messaging.html");
     $('.footer').load("views/main-footer.html");
-    $('.header').load("views/main-header.html", function() {
+    $('.header').load("views/header-back.html", function() {
     $('h5.title-txt').text("Messaging");
         });
 });

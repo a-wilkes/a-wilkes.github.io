@@ -5,13 +5,13 @@
         <div class="card-body">
           <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Chats</a>
+              <a class="nav-link active l-pill" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Chats</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-friends-tab" data-toggle="pill" href="#pills-friends" role="tab" aria-controls="pills-friends" aria-selected="false">Connections</a>
+              <a class="nav-link m-pill" id="pills-friends-tab" data-toggle="pill" href="#pills-friends" role="tab" aria-controls="pills-friends" aria-selected="false">Connections</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">All</a>
+              <a class="nav-link r-pill" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Suggestions</a>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -237,7 +237,7 @@
               
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-                <h6 class="card-title text-muted">Find Contacts</h6>
+                <small class="card-title text-muted">Find Contacts</small>
                 <!-- LIST OF ARTICLES -->
                 <ul class="list-unstyled">
                     <li class="row">
@@ -273,7 +273,7 @@
                   
                 </ul>
                 
-                <h6 class="card-title text-muted">Suggestions</h6>
+                <small class="card-title text-muted">Suggestions</small>
                 
                 <ul class="list-unstyled">
                     <li class="row">
@@ -376,6 +376,27 @@
   .profile {
     max-width: 12%;
   }
+    
+    .nav-pills li {
+        width: 33%;
+        text-align: center;
+        font-size: 0.775rem;
+    }
+    
+    .nav-pills li a.r-pill {
+        border-radius: 0 1em 1em 0 !important;
+        border: 1px solid #007bff;
+    }
+    
+    .nav-pills li a.m-pill {
+        border-radius: 0 0 0 0 !important;
+        border: 1px solid #007bff;
+    }
+    
+    .nav-pills li a.l-pill {
+        border-radius: 1em 0 0 1em !important;
+        border: 1px solid #007bff;
+    }
 </style>
 
 <script type="text/javascript">
