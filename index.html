@@ -32,7 +32,7 @@
   <div class="header">
     <header class="container-fluid">
         <nav class="navbar fixed-top bg-light shadow-sm p-3 mb-2">
-            <div class="fas fa-bars d-inline-block align-top col-1" onclick="openNav()"></div>
+            <div class="fas fa-bars d-inline-block align-top col-1"></div>
             <div class="col-10"><b>BabyBreathe<sup>TM</sup></b></div>
             <div class="fas fa-comment-dots d-inline-block align-top col-1 messaging"></div>
         </nav>
@@ -45,20 +45,7 @@
     </main>
 </div>
 
-<div id="my-nav-overlay" class="sidenav" style="width: 0px; opacity: 0.2;" onclick="closeNav()">
-  </div>
-
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#" class="home" onclick="closeNav()">Home</a>
-          <a href="#" class="profile"  onclick="closeNav()">Profile</a>
-          <a href="#" class="messaging" onclick="closeNav()">Messaging</a>
-          <a href="#" class="community" onclick="closeNav()">Community</a>
-          <a href="#" class="consult" onclick="closeNav()">Consultation</a>
-          <a href="#" class="monitor" onclick="closeNav()">Monitor</a>
-          <a href="#" class="games" onclick="closeNav()">Recreation</a>
-          <a href="#" class="settings"  onclick="closeNav()">Settings</a>
-      </div>
+<div id="side-nav"></div>
 
     <footer class="footer">
         <div class="row">
@@ -86,7 +73,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-        <script src="./controllers/router.js"></script>
+        <script type="application/javascript">
+            $( document ).ready(function() {
+                $('.root').load("views/home.html");
+                $('.footer').load("views/main-footer.html");
+            });
+        </script>
         <script src="./controllers/nav.js"></script>
     <!-- Toggle Switch source -->
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>

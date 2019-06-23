@@ -1,8 +1,3 @@
-$( document ).ready(function() {
-    $('.root').load("views/home.html");
-    $('.footer').load("views/main-footer.html");
-});
-
 $(".home").click(function(){
    $('.root').load("views/home.html");
     $('.footer').load("views/main-footer.html");
@@ -41,4 +36,8 @@ $(".profile").click(function(){
 $(".settings").click(function(){
    $('.root').load("views/settings.html");
     $('.footer').load("views/main-footer.html");
+});
+
+$(".fa-bars").click(function(){
+   $('#side-nav').load("views/sidenav.html");
 });
