@@ -3,7 +3,7 @@
         <nav class="navbar fixed-top bg-light shadow-sm p-3 mb-2">
             <div class="row">
             <div class="fas fa-arrow-left fa-2x align-top col-2" ></div>
-            <h5 class="col-9 pl-5 mt-1 title-txt">BabyBreathe<sup>TM</sup></h5>
+            <h5 class="col-9 pl-5 mt-1 title-txt">Recreation</h5>
             <div class="icon-large align-top"></div>
           </div>
           </nav>
@@ -12,8 +12,10 @@
 
 <script type="application/javascript">
     $(".fa-arrow-left").click(function(){
-       $('.root').load("views/home.html");
+       $('.root').load("views/games.html");
         $('.footer').load("views/main-footer.html");
-        $('.header').load("views/main-header.html");
+        $('.header').load("views/main-header.html", function(){
+            $('h5.title-txt').text("Recreation"); 
+        });
     });
 </script>

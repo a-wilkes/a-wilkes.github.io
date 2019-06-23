@@ -13,7 +13,7 @@
           <!-- LIST OF ARTICLES -->
           <ul class="list-unstyled">
             <li class="media">
-              <img src="../res/img/psych.jpg" class="profile mr-3" alt="...">
+              <img src="../res/img/psych.jpg" class="profile mr-3 rounded border" alt="...">
               <div class="media-body">
                 <h6 class="mt-0 mb-1">Therapist 1</h6>
                 Date: 22/07/19 | Time: 12:00
@@ -29,12 +29,13 @@
           </div>
           </div>
 
-      <div class="consult-page bottom-button container pl-5">
+      <div class="consult-page bottom-button container pl-5 pb-2">
         <button type="button" class="btn btn-primary px-5 schedule">Schedule Appointment</button>
       </div>
       <script type="text/javascript">
         $(".schedule").click(function(){
-           $('.root').load("views/consult.html");
+            $('.root').load("views/consult.html");
+            $('.header').load("views/header-back-consult.html");
         });
       </script>
 
