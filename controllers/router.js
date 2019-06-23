@@ -45,7 +45,3 @@ $(".settings").click(function(){
     $('.footer').load("views/main-footer.html");
     $('h5.title-txt').text("Settings");
 });
-
-$(".fa-bars").click(function(){
-   $('#side-nav').load("views/sidenav.html");
-});
