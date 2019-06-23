@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.css">
 
     <link rel="stylesheet" href="./index.css">
-    
+
     <link rel="stylesheet" href="./sidenav.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,17 +30,6 @@
   </head>
   <body>
   <div class="header">
-    <header class="container-fluid">
-        
-        <nav class="navbar fixed-top bg-light shadow-sm p-3 mb-2">
-            <div class="row">
-            <div class="fas fa-bars fa-2x align-top col-1 " ></div>
-            
-            <div class="fas fa-comment-dots fa-2x icon-large align-top messaging"></div>
-          </div>
-          </nav>
-      
-    </header>
   </div>
 
 
@@ -50,7 +39,7 @@
 </div>
 
 <div id="side-nav"></div>
-<div class="container-fluid">
+
     <footer class="footer">
         <div class="row">
             <div class="col community">
@@ -70,10 +59,9 @@
             </div>
         </div>
     </footer>
-  </div>
 
     <!-- Optional JavaScript -->
-        
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -83,13 +71,14 @@
         <script type="application/javascript">
             $( document ).ready(function() {
                 $('.root').load("views/home.html");
+                $('.header').load("views/main-header.html");
                 $('.footer').load("views/main-footer.html");
             });
         </script>
         <script src="./controllers/nav.js"></script>
     <!-- Toggle Switch source -->
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-      
+
   </body>
 
 </html>
