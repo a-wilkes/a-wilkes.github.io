@@ -1,8 +1,17 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../res/css/messaging.css" />
+    <script type="text/javascript" src="../../js/messaging.js"></script>
+</head>
+
+<!-- The messaging page -->
 <div class="container-fluid mb-5 mt-4">
 
+    <!-- The main container for the following screens -->
     <div class="container-fluid mb-5">
         <div class="card">
             <div class="card-body">
+
+                <!-- The navigation pills -->
                 <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active l-pill" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Chats</a>
@@ -17,7 +26,7 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-                        <!-- LIST OF ARTICLES -->
+                        <!-- List of conversations -->
                         <ul class="list-unstyled">
 
                             <li class="row">
@@ -140,7 +149,7 @@
 
                     <div class="tab-pane fade" id="pills-friends" role="tabpanel" aria-labelledby="pills-friends-tab">
 
-                        <!-- LIST OF ARTICLES -->
+                        <!-- List of friends -->
                         <ul class="list-unstyled">
 
                             <li class="row">
@@ -238,7 +247,7 @@
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
                         <small class="card-title text-muted">Find Contacts</small>
-                        <!-- LIST OF ARTICLES -->
+                        <!-- List of non-friends -->
                         <ul class="list-unstyled">
                             <li class="row">
                                 <div class="col">
@@ -361,52 +370,9 @@
                                 </div>
                             </li>
                         </ul>
-
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </div>
-
-<style>
-    .profile {
-        max-width: 12%;
-      }
-        
-        .nav-link {
-            padding: 0.5rem 0.1rem !important;
-        }
-        
-        .nav-pills li {
-            width: 33%;
-            text-align: center;
-            font-size: 0.6rem;
-        }
-        
-        .nav-pills li a.r-pill {
-            border-radius: 0 1em 1em 0 !important;
-            border: 1px solid #00adb5;
-        }
-        
-        .nav-pills li a.m-pill {
-            border-radius: 0 0 0 0 !important;
-            border: 1px solid #00adb5;
-        }
-        
-        .nav-pills li a.l-pill {
-            border-radius: 1em 0 0 1em !important;
-            border: 1px solid #00adb5;
-        }
-</style>
-
-<script type="text/javascript">
-    $(".media.border").click(function(){
-        $('.root').load("views/messaging/fullmessage.html");
-        $('.footer').load("views/messaging/message-footer.html");
-        $('.header').load("views/messaging/header-back-messaging.html");
-    });
-</script>

@@ -1,21 +1,16 @@
+<head>
+    <script type="text/javascript" src="../../js/messaging.js"></script>
+</head>
+
+<!-- The back button functionality -->
 <header class="container-fluid">
 
     <nav class="navbar fixed-top shadow-lg p-3 mb-2">
         <div class="row">
-            <div class="fas fa-arrow-left fa-2x align-top col-2"></div>
+            <div class="fas fa-arrow-left messaging fa-2x align-top col-2"></div>
             <h5 class="col-9 pl-5 mt-1 title-txt">Messaging</h5>
             <div class="icon-large align-top"></div>
         </div>
     </nav>
 
 </header>
-
-<script type="application/javascript">
-    $(".fa-arrow-left").click(function(){
-       $('.root').load("views/messaging/messaging.html");
-        $('.footer').load("views/main-footer.html");
-        $('.header').load("views/header-back.html", function(){
-            $('h5.title-txt').text("Messaging"); 
-        });
-    });
-</script>
