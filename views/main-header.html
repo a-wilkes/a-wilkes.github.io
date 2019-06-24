@@ -1,3 +1,7 @@
+<head>
+    <script type="text/javascript" src="../../js/main-header.js"></script>
+</head>
+
 <header class="container-fluid">
 
     <nav class="navbar fixed-top shadow-lg p-3 mb-2">
@@ -9,17 +13,3 @@
     </nav>
 
 </header>
-
-<script>
-    $(".fa-bars").click(function(){
-       $('#side-nav').load("views/sidenav.html");
-    });
-    
-    $(".messaging").click(function(){
-       $('.root').load("views/messaging/messaging.html");
-        $('.footer').load("views/main-footer.html");
-        $('.header').load("views/header-back.html", function(){
-           $('h5.title-txt').text("Messaging"); 
-        });
-    });
-</script>
