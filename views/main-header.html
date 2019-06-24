@@ -1,13 +1,13 @@
 <header class="container-fluid">
-        
-        <nav class="navbar fixed-top shadow-lg p-3 mb-2">
-            <div class="row">
-            <div class="fas fa-bars fa-2x align-top col-2" ></div>
+
+    <nav class="navbar fixed-top shadow-lg p-3 mb-2">
+        <div class="row">
+            <div class="fas fa-bars fa-2x align-top col-2"></div>
             <h5 class="col-9 pl-5 mt-1 title-txt">BabyBreathe<sup>TM</sup></h5>
             <div class="fas fa-comment-dots fa-2x icon-large align-top messaging"></div>
-          </div>
-          </nav>
-      
+        </div>
+    </nav>
+
 </header>
 
 <script>
@@ -16,7 +16,7 @@
     });
     
     $(".messaging").click(function(){
-       $('.root').load("views/messaging.html");
+       $('.root').load("views/messaging/messaging.html");
         $('.footer').load("views/main-footer.html");
         $('.header').load("views/header-back.html", function(){
            $('h5.title-txt').text("Messaging"); 

@@ -1,0 +1,81 @@
+<div class="container-fluid mt-4 mb-5 pb-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+                <div class="row pt-3" id="acc-row" onclick="clickToggle('#acc-toggle')">
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-start mr-3" src="../res/icon/eye.png" alt="Accessibility mode eye icon" />
+                            <div class="ml-3 media-body">
+                                <p>Accessibility Mode</p>
+                            </div>
+                            <div class="media-checkbox">
+                                <input class="checkbox" id="acc-toggle" type="checkbox" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-start mr-3 pt-2" src="../res/icon/bell.png" alt="Notification frequency bell icon" />
+                            <div class="media-body dropdown">
+                                <button class="btn dropdown-toggle pb-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Notification Frequency
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">High</a>
+                                    <a class="dropdown-item" href="#">Medium</a>
+                                    <a class="dropdown-item" href="#">Low</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4" onclick="clickToggle('#anon-toggle')">
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-start mr-3" src="../res/icon/mask.png" alt="Anonymous mode mask icon" />
+                            <div class="ml-3 media-body">
+                                <p>Anonymous Mode</p>
+                            </div>
+                            <div class="media-checkbox">
+                                <input class="checkbox" id="anon-toggle" type="checkbox" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="media">
+                            <img class="align-self-start mr-3 pt-2" src="../res/icon/tools.png" alt="Advanced settings tools icon" />
+                            <div class="media-body dropdown">
+                                <button class="btn dropdown-toggle pb-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Advanced Settings
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Example option 1</a>
+                                    <a class="dropdown-item" href="#">Example option 2</a>
+                                    <a class="dropdown-item" href="#">Example option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Settings for the toggle switches -->
+<script type="text/javascript">
+    $(function () {
+        $('.checkbox').bootstrapToggle({
+          size: "small"
+        });
+      })
+    
+      function clickToggle(button) {
+        $(button).bootstrapToggle('toggle');
+      }
+</script>

@@ -1,18 +1,18 @@
 <header class="container-fluid">
-        
-        <nav class="navbar fixed-top shadow-sm p-3 mb-2">
-            <div class="row">
-            <div class="fas fa-arrow-left fa-2x align-top col-2" ></div>
+
+    <nav class="navbar fixed-top shadow-lg p-3 mb-2">
+        <div class="row">
+            <div class="fas fa-arrow-left fa-2x align-top col-2"></div>
             <h5 class="col-9 pl-5 mt-1 title-txt">Consultation</h5>
             <div class="icon-large align-top"></div>
-          </div>
-          </nav>
-      
+        </div>
+    </nav>
+
 </header>
 
 <script type="application/javascript">
     $(".fa-arrow-left").click(function(){
-       $('.root').load("views/consult0.html");
+       $('.root').load("views/consultation/consult0.html");
         $('.footer').load("views/main-footer.html");
         $('.header').load("views/main-header.html", function(){
             $('h5.title-txt').text("Consultation"); 
