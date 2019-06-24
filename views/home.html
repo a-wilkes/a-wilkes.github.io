@@ -1,4 +1,4 @@
-<div class="container-fluid mb-3 mt-4">
+<div class="background container-fluid mb-3 mt-4">
   <div class="card">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 
@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<div class="container-fluid mb-3 discover">
+<div class="background container-fluid mb-3 discover">
   <div class="card">
         <div class="card-header text-center">
           <h6 id="page-header">Read and save health tips from experts</h6>
@@ -115,7 +115,7 @@
 <div class="container-fluid mb-5 community-section">
   <div class="card">
       <div class="card-header text-center">
-          <h6>Connect with other moms just like you</h6>
+          <h6>Connect with other parents just like you</h6>
         </div>
     <div class="card-body">
       <ul class="nav nav-pills mb-2 nav2" id="pills-tab" role="tablist">
@@ -331,6 +331,13 @@
     }
 </style>
 
+<script language="JavaScript" type="text/javascript">
+  $(document).ready(function () {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });    
+</script>
 <script type="text/javascript">
   $(".showmore-news").click(function () {
       $('.root').load("views/showmore.html");
