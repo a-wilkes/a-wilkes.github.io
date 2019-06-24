@@ -10,6 +10,11 @@
 
 .card-header:first-child {
     border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0 !important;
+    background-color: #edf8f4 !important;
+}
+
+a {
+    font-weight: 600;
 }
 
 header {
@@ -18,7 +23,11 @@ header {
     top: 0;
     overflow: auto;
     z-index: 1;
-    
+}
+
+header nav {
+    background-color: #00adb5 !important;
+    color: #fefefe !important;
 }
 
 .fa-comment-dots {
@@ -31,6 +40,7 @@ header {
     padding-top: 70px;
     padding-bottom: 25px;
     overflow: auto;
+    background-color: #eeeeee;
 }
 
 .carousel-item img {
@@ -50,7 +60,9 @@ img.card-img-top {
     margin-top: 100px;
     min-height: 60px;
     line-height: 60px;
-    background: white;
+    background: #e3fdfd;
+    color: #494949;
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.2);
   }
 .footer .row .col {
     text-align: center;
@@ -65,4 +77,21 @@ img.card-img-top {
     position: fixed;
     bottom: 0;
     margin-bottom: 72px;
+}
+
+.bg {
+    color: #00ADB5;
+    color: #393E46;
+    
+    color: #EDF8F4;
+    color: #222A31;
+}
+
+.main-color-bg {
+    background-color: #00adb5 !important;
+    color: #fefefe !important;
+}
+
+.main-color-txt {
+    color: #00adb5 !important;
 }
