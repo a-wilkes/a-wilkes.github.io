@@ -14,7 +14,9 @@ $(".friends").click(function () {
 
 $(".fa-arrow-left").click(function () {
     $('.root').load("views/recreation/games.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".games").addClass("active");
+    });
     $('.header').load("views/main-header.html", function () {
         $('h5.title-txt').text("Recreation");
     });

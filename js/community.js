@@ -5,7 +5,9 @@ $(".media.card.outer-post").click(function () {
 
 $(".fa-arrow-left").click(function () {
     $('.root').load("views/community/community.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".community").addClass("active");
+    });
     $('.header').load("views/main-header.html", function () {
         $('h5.title-txt').text("Community");
     });

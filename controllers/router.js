@@ -1,14 +1,18 @@
 $(".home").click(function(){
    $('.root').load("views/home/home.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".home").addClass("active");
+    });
     $('.header').load("views/main-header.html", function() {
-       $('h5.title-txt').text("BabyBreathe"); 
+       $('h5.title-txt').html("BabyBreathe<sup>TM</sup>"); 
     });
 });
 
 $(".community").click(function(){
    $('.root').load("views/community/community.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".community").addClass("active");
+    });
     $('.header').load("views/main-header.html", function() {
         $('h5.title-txt').text("Community");
     });
@@ -16,7 +20,9 @@ $(".community").click(function(){
 
 $(".consult").click(function(){
    $('.root').load("views/consultation/consult0.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".consult").addClass("active");
+    });
     $('.header').load("views/main-header.html", function() {
         $('h5.title-txt').text("Consultations");
     });
@@ -24,7 +30,9 @@ $(".consult").click(function(){
 
 $(".monitor").click(function(){
    $('.root').load("views/monitor/monitor.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".monitor").addClass("active");
+    });
     $('.header').load("views/main-header.html", function() {
         $('h5.title-txt').text("Monitor");
     });
@@ -32,7 +40,9 @@ $(".monitor").click(function(){
 
 $(".games").click(function(){
    $('.root').load("views/recreation/games.html");
-    $('.footer').load("views/main-footer.html");
+    $('.footer').load("views/main-footer.html", function() {
+        $(".games").addClass("active");
+    });
     $('.header').load("views/main-header.html", function() {
         $('h5.title-txt').text("Recreation");
     });

@@ -44,19 +44,19 @@
         <footer class="footer">
             <div class="row">
                 <div class="col community">
-                    <i class="fas fa-users fa-2x"></i>
+                    <i class="fas fa-users fa-lg"></i>
                 </div>
                 <div class="col consult">
-                    <i class="fas fa-stethoscope fa-2x"></i>
+                    <i class="fas fa-stethoscope fa-lg"></i>
                 </div>
                 <div class="col home">
-                    <i class="fas fa-home fa-2x"></i>
+                    <i class="fas fa-home fa-lg"></i>
                 </div>
                 <div class="col monitor">
-                    <i class="fas fa-search-dollar fa-2x"></i>
+                    <i class="fas fa-search-dollar fa-lg"></i>
                 </div>
                 <div class="col games">
-                    <i class="fas fa-chess-knight fa-2x"></i>
+                    <i class="fas fa-chess-knight fa-lg"></i>
                 </div>
             </div>
         </footer>
@@ -76,7 +76,9 @@
     <script type="application/javascript">
         $( document ).ready(function() {
                 $('.root').load("views/home/home.html");
-                $('.footer').load("views/main-footer.html");
+                $('.footer').load("views/main-footer.html", function() {
+                    $(".home").addClass("active");
+                });
                 $('.header').load("views/main-header.html");
             });
     </script>
