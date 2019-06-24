@@ -1,0 +1,29 @@
+.profile {
+    max-width: 12%;
+}
+
+.invite {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.user {
+    border-bottom: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+}
+
+.search-result{
+margin: 0 0 15px;
+color: #333;
+}
+
+.search-result{
+font-size: 12px;
+color: #333;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}

@@ -1,3 +1,8 @@
+<head>
+    <script type="text/javascript" src="../../js/recreation.js"></script>
+</head>
+
+<!-- The header for leaving the games section -->
 <header class="container-fluid">
 
     <nav class="navbar fixed-top shadow-lg p-3 mb-2">
@@ -9,13 +14,3 @@
     </nav>
 
 </header>
-
-<script type="application/javascript">
-    $(".fa-arrow-left").click(function(){
-       $('.root').load("views/recreation/games.html");
-        $('.footer').load("views/main-footer.html");
-        $('.header').load("views/main-header.html", function(){
-            $('h5.title-txt').text("Recreation"); 
-        });
-    });
-</script>
