@@ -1,3 +1,8 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../res/css/profile.css" />
+    <script type="text/javascript" src="../../js/profile.js"></script>
+</head>
+
 <div class="container-fluid mb-3 mt-4">
     <div class="card">
         <div class="card-header text-center">
@@ -84,47 +89,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    .nav-pills li {
-        width: 50%;
-        text-align: center;
-    }
-    
-    ul.nav {
-        padding-bottom: 10px;
-        border-bottom: 1px solid #f1f2f2;
-    }
-    
-    .nav-pills li a.r-pill {
-        border-radius: 0 1em 1em 0 !important;
-        border: 1px solid #00adb5;
-    }
-    
-    .nav-pills li a.l-pill {
-        border-radius: 1em 0 0 1em !important;
-        border: 1px solid #00adb5;
-    }
-</style>
-
-<!-- Controls hiding and showing multiple tabs when clicking the pills -->
-<script>
-    function changeHeader(profile) {
-        if (profile) {
-          document.getElementById('page-header').innerHTML = "Check our posts you've liked here";
-        }
-        else {
-          document.getElementById('page-header').innerHTML = "Tell us your story";
-        }
-    
-        profile = !profile;
-      }
-    
-      function hideMessage(elem) {
-        $(elem).hide();
-      }
-    
-      function showMessage(elem) {
-          $(elem).show();
-        }
-</script>
