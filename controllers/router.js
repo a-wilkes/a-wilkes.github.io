@@ -1,5 +1,5 @@
 $(".home").click(function(){
-   $('.root').load("views/home.html");
+   $('.root').load("views/home/home.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
        $('h5.title-txt').text("BabyBreathe"); 
@@ -7,57 +7,57 @@ $(".home").click(function(){
 });
 
 $(".community").click(function(){
-   $('.root').load("views/community.html");
+   $('.root').load("views/community/community.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Community");
-        });
+        $('h5.title-txt').text("Community");
+    });
 });
 
 $(".consult").click(function(){
-   $('.root').load("views/consult0.html");
+   $('.root').load("views/consultation/consult0.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Consultations");
-        });
+        $('h5.title-txt').text("Consultations");
+    });
 });
 
 $(".monitor").click(function(){
-   $('.root').load("views/monitor.html");
+   $('.root').load("views/monitor/monitor.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Monitor");
-        });
+        $('h5.title-txt').text("Monitor");
+    });
 });
 
 $(".games").click(function(){
-   $('.root').load("views/games.html");
+   $('.root').load("views/recreation/games.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Recreation");
-        });
+        $('h5.title-txt').text("Recreation");
+    });
 });
 
 $(".messaging").click(function(){
-   $('.root').load("views/messaging.html");
+   $('.root').load("views/messaging/messaging.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/header-back.html", function() {
-    $('h5.title-txt').text("Messaging");
-        });
+        $('h5.title-txt').text("Messaging");
+    });
 });
 
 $(".profile").click(function(){
-   $('.root').load("views/profile.html");
+   $('.root').load("views/profile/profile.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Profile");
-        });
+        $('h5.title-txt').text("Profile");
+    });
 });
 
 $(".settings").click(function(){
-   $('.root').load("views/settings.html");
+   $('.root').load("views/settings/settings.html");
     $('.footer').load("views/main-footer.html");
     $('.header').load("views/main-header.html", function() {
-    $('h5.title-txt').text("Settings");
-        });
+        $('h5.title-txt').text("Settings");
+    });
 });
