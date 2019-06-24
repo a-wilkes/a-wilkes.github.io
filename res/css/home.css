@@ -1,0 +1,35 @@
+.profile {
+    max-width: 12%;
+}
+
+.icon {
+    max-width: 32px;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f2f2;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.nav-pills li {
+    width: 50%;
+    text-align: center;
+}
+
+.nav-pills li a.r-pill {
+    border-radius: 0 1em 1em 0 !important;
+    border: 1px solid #00adb5;
+}
+
+.nav-pills li a.l-pill {
+    border-radius: 1em 0 0 1em !important;
+    border: 1px solid #00adb5;
+}
